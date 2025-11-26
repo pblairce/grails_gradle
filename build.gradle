@@ -17,6 +17,8 @@ buildscript {
     }
 }
 
+buildDir = 'target'
+
 version = "0.1"
 group = "grails.hello.world"
 
