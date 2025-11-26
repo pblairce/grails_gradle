@@ -1,6 +1,7 @@
 buildscript {
     repositories {
-        mavenCentral()
+        maven { url = "https://public.artifactory.adv.evoforge.org/artifactory/grails-core-remote" }
+        maven { url = "https://public.artifactory.adv.evoforge.org/artifactory/grails-plugins-remote" }
         maven { url = "https://public.artifactory.adv.evoforge.org/artifactory/maven-remote" }
     }
     dependencies {
@@ -23,7 +24,8 @@ apply plugin:"eclipse"
 apply plugin:"cloud.wondrify.asset-pipeline"
 
 repositories {
-    mavenCentral()
+    maven { url = "https://public.artifactory.adv.evoforge.org/artifactory/grails-core-remote" }
+    maven { url = "https://public.artifactory.adv.evoforge.org/artifactory/grails-plugins-remote" }
     maven { url = "https://public.artifactory.adv.evoforge.org/artifactory/maven-remote" }
 }
 

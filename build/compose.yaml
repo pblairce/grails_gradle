@@ -3,8 +3,8 @@ services:
     image: gradle:8.14.3-jdk17-corretto
     working_dir: /grails_gradle
     volumes:
-      - ./entrypoint.sh:/usr/local/bin/entrypoint.sh
+      - ./entrypoint.sh:/root/entrypoint.sh
       - ./../:/grails_gradle
       - ./user.settings.xml:/root/.m2/settings.xml
       - /etc/pki/tls/:/etc/pki/tls/
-    # entrypoint: ["entrypoint.sh"]
+    # entrypoint: ["/root/entrypoint.sh"]
