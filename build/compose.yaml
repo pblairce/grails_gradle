@@ -1,7 +1,7 @@
 services:
-  gradle_grails:
+  grails_gradle:
     image: gradle:8.14.3-jdk17-corretto
-    working_dir: /gradle_grails
+    working_dir: /grails_gradle
     volumes:
       - ./entrypoint.sh:/usr/local/bin/entrypoint.sh
       - ./../:/grails_gradle
