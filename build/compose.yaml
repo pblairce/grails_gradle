@@ -7,4 +7,4 @@ services:
       - ./../:/grails_gradle
       - ./user.settings.xml:/root/.m2/settings.xml
       - /etc/pki/tls/:/etc/pki/tls/
-    # entrypoint: ["/root/entrypoint.sh"]
+    entrypoint: ["/root/entrypoint.sh"]
