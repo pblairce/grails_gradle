@@ -11,7 +11,10 @@ This is a simple Grails 7.0.2 application using Gradle 9.2.1 and Java 17.
 To build the WAR file, run:
 
 ```bash
-./gradlew assemble
+./scripts/run-container.sh
+
+# once inside the container run
+gradle assemble
 ```
 
 The WAR file will be generated in `target/lib`.
@@ -21,5 +24,8 @@ The WAR file will be generated in `target/lib`.
 (Optional) To run the application locally:
 
 ```bash
-./gradlew bootRun
+./scripts/run-container.sh
+
+# once inside the container run
+gradle bootRun
 ```
